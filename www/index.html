@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"/>
+    <title>Self Admob</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <div id="index.html">
+      
+        <div class="center" style="text-align: center">Admob Phonegap App</div>
+      <div style="text-align: center; padding-top: 30px">
+        <p id="status">Status</p>
+        <p><button class="button" onclick="showBannerAd()">Show Banner Ad</button></p>
+        
+        <p><button class="button" onclick="showInterstitialAd()">Show Interstitial Ad</button></p>
+        
+        <button class="button" onclick="showRewardedVideoAd()">Show Reward Ad</button><br>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="admob.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
