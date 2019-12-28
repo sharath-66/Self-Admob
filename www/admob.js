@@ -40,7 +40,7 @@ function initAd() {
   AdMob.createBanner({
     adId: admobid.banner,
     position: AdMob.AD_POSITION.BOTTOM_CENTER,
-    autoShow: true
+    autoShow: true //set them to true if u want nammer ads to show as soon as page loads
   });
   AdMob.prepareRewardVideoAd({
     adId: admobid.rewardvideo,
@@ -79,6 +79,7 @@ function registerAdEvents() {
   });
 }
 
+//set them to true for autoShowing other ads apart from banner ads
 function prepareAd(type) {
   if (type === 'interstitial') {
     AdMob.prepareInterstitial({
